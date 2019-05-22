@@ -13,5 +13,5 @@ int main()
   temp = a;
   a = c;
   c = temp;
-  printf("A: %d   C: %d\n",a,c);
+  printf("A: %d    C: %d\n",a,c);
 }
