@@ -22,8 +22,8 @@ int main()
   float e = 68.283;
 printf("The value of d is %f, and the value of ptrtod is %d\n",d, &d);
    printf("The value of e is %f, and the value of ptrtoe is %d\n",e, &e);
-  int* ptrtod;
-  int* ptrtoe;
+  float* ptrtod;
+  float* ptrtoe;
   ptrtod = &d;
   ptrtoe = &e;  
 
