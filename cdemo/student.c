@@ -10,21 +10,23 @@ void printStudent(struct Student* s){
     printf("Full Name: %s, %s",s->fname,s->lname);
 }
 int main(){
-    char input[256], f[256];
+    char input[256], f[10], l[10];
+    int a;
+    int id;
     printf("Please enter your first name\n");
-    fgets(input, 256, stdin);
-    scanf(input,"%s", f);
-    printf("Hi %s",f);
+    scanf("%s", f);
+    printf("Hi %s\n",f);
     
-   printf("Please enter your last name");
-    fgets(input, 256, stdin);
-    scanf(input,"%s", f);
+   printf("Please enter your last name\n");
+    scanf("%s", l);
     
-    printf("Please enter your age");
-    fgets(input, 256, stdin);
-    scanf(input,"%s", f);
+    printf("Please enter your age\n");
+    scanf("%d", &a);
     
-    printf("Please enter your student ID");
-    fgets(input, 256, stdin);
-    scanf(input,"%s", f);
+    printf("Please enter your student ID\n");
+    scanf("%d", &id);
+	
+    struct Student s;
+    s.fname = f;
+    
 }
