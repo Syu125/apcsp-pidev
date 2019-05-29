@@ -9,7 +9,7 @@ void enter(int c){
  char f[20], l[20];
     int a;
     int id;
-    printf("\nenter %d\n", c); 
+//    printf("\nenter %d\n", c); 
 
     printf("Please enter your first name\n");
     scanf("%s", f);
@@ -43,7 +43,7 @@ void scan(){
     scan(); 
 }
     if(answer ==2){
-        printf("\nStudents%d\n", count);
+        printf("\nStudents\n");
     for (int i = 0; i <= count; i++)
 	printStudent(&(s[i]));
         }     
