@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 #include "student.h"
+
+struct Student s[5];
+
 void enter(int c){
 //printf("%d",c);
- char input[256], f[20], l[20];
+ char f[20], l[20];
     int a;
     int id;
-    printf("\n"); 
+    printf("\nenter %d\n", c); 
+
     printf("Please enter your first name\n");
     scanf("%s", f);
     
@@ -39,8 +43,9 @@ void scan(){
     scan(); 
 }
     if(answer ==2){
-        printf("\nStudents\n");
-	printStudent(s);
+        printf("\nStudents%d\n", count);
+    for (int i = 0; i <= count; i++)
+	printStudent(&(s[i]));
         }     
 }
 int main(){
